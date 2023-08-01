@@ -9,9 +9,9 @@ git clone https://github.com/s2dent18/console_app.git
 ```sh
 python myApp.py 1
 ```   
-2. Создание записи. Обязательные аргументы: <'ФИО'> <ДатаРождения> <Пол: (M/F)>. Пример команды:
+2. Создание записи. Обязательные аргументы: <'ФИО'> <ДатаРождения в формате: YYYY-MM-DD> <Пол: (M/F)>. Пример команды:
 ```sh
-python myApp.py 2 'Ivanov Ivan Viktorovich' 21.01.1974 M
+python myApp.py 2 'Ivanov Ivan Viktorovich' 1974-09-28 M
 ```   
 - Вывод всех строк с уникальным значением ФИО+дата, отсортированным по ФИО:
  ```sh
