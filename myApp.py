@@ -107,6 +107,7 @@ def generate_fake_person(len, param):
     bar = Bar("Прогресс", max=len) # Для визуализации процесса генерации в консоли.
     for _ in range(len):
         if param:
+            gender = "M"
             fio = " ".join([random.choice(second_name_base),
                             fake.first_name_male(), fake.middle_name_male()])
         else:
@@ -207,7 +208,7 @@ def optimize_database():
         print("База данных уже оптимизирована")
         return
     # Скрипт, разбивающий таблицу на две подтаблицы.
-    cursor.executescript('''
+    cursor.execute('''
     CREATE TABLE IF NOT EXISTS people_optimized(
         id SERIAL PRIMARY KEY,
         fio VARCHAR(50),
