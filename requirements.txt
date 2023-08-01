@@ -1,1 +1,6 @@
+Faker==19.2.0
+progress==1.6
 psycopg2==2.9.6
+python-dateutil==2.8.2
+six==1.16.0
+transliterate==1.10.2
